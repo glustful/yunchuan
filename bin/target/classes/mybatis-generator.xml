@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE generatorConfiguration  
+PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"  
+"http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<!-- <generatorConfiguration> -->
+	<!-- <properties resource="classpath:/jdbc.properties"/>
+	classPathEntry:数据库的JDBC驱动,换成你自己的驱动位置  
+	<classPathEntry location="E:/maven_repository/mysql/mysql-connector-java/5.1.21/mysql-connector-java-5.1.21.jar" />
+
+	<context id="generatorTables" targetRuntime="MyBatis3">
+
+		<plugin type="org.mybatis.generator.plugins.MapperConfigPlugin">
+		<property name="fileName" value="mybatis-config.xml"/>
+		<property name="targetPackage" value="/"/>
+		<property name="targetProject" value="src/main/resources"/>
+		</plugin>
+		
+		此处是将Example改名为Criteria 当然 想改成什么都行
+		<plugin type="org.mybatis.generator.plugins.RenameExampleClassPlugin">
+		<property name="searchString" value="Example"/>
+		<property name="replaceString" value="Criteria"/>
+		</plugin>
+
+		<plugin type="org.mybatis.generator.plugins.SerializablePlugin"/>
+
+		commentGenerator 去除自动生成的注释 
+		<commentGenerator>
+		<property name="suppressDate" value="true" />
+		</commentGenerator>
+
+		jdbcConnection是指定的jdbc的连接信息；
+		<jdbcConnection driverClass="com.mysql.jdbc.Driver"
+		connectionURL="jdbc:mysql://localhost:3306/mybatis" userId="root"
+		password="">
+		</jdbcConnection>
+
+		
+		默认false，把JDBC DECIMAL 和 NUMERIC 类型解析为 Integer true，
+		把JDBC DECIMAL 和 NUMERIC 类型解析为java.math.BigDecimal 
+		
+		<javaTypeResolver>
+		<property name="forceBigDecimals" value="false" />
+		</javaTypeResolver>
+
+		javaModelGenerator是模型的生成信息，这里将指定这些Java model类的生成路径；
+		<javaModelGenerator targetPackage="cn.com.abel.springProject.model"
+		targetProject="src/main/java">
+		<property name="enableSubPackages" value="true" />
+		<property name="trimStrings" value="true" />
+		</javaModelGenerator>
+
+		sqlMapGenerator是mybatis 的sqlMapper XML文件的生成信息，包括生成路径等；
+		<sqlMapGenerator targetPackage="cn.com.abel.springProject.dao"
+		targetProject="src/main/resources">
+		<property name="enableSubPackages" value="true" />
+		</sqlMapGenerator>
+
+		javaClientGenerator是应用接口的生成信息；
+		<javaClientGenerator type="XMLMAPPER"
+		targetPackage="cn.com.abel.springProject.dao" targetProject="src/main/java">
+		<property name="enableSubPackages" value="true" />
+		</javaClientGenerator>
+
+
+		table是用户指定的被生成相关信息的表，它必须在指定的jdbc连接中已经被建立。
+		<table tableName="user" domainObjectName="UserModel" >
+			返回新增记录ID值
+			<generatedKey column="ID" sqlStatement="MySql" identity="true"/>
+		</table> -->
+		
+		<!-- <table tableName="can_article" domainObjectName="ArticleModel">
+			<generatedKey column="ID" sqlStatement="MySql" identity="true"/>
+			<columnOverride column="IS_HOT" javaType="Boolean"/>
+			<columnOverride column="IS_TOT" javaType="Boolean"/>
+			<columnOverride column="IS_NEW" javaType="Boolean"/>
+			<columnOverride column="IS_COMMENT" javaType="Boolean"/>
+		</table>
+		
+		<table tableName="can_brand" domainObjectName="BrandModel">
+			<generatedKey column="ID" sqlStatement="MySql" identity="true"/>
+			<columnOverride column="DISABLED" javaType="Boolean"/>
+		</table>
+		
+		<table tableName="can_cat" domainObjectName="CatModel">
+			<generatedKey column="ID" sqlStatement="MySql" identity="true"/>
+			<columnOverride column="DISABLED" javaType="Boolean"/>
+		</table>
+		
+		<table tableName="can_friend_links" domainObjectName="FriendLinksModel">
+			<generatedKey column="ID" sqlStatement="MySql" identity="true"/>
+			<columnOverride column="DISABLED" javaType="Boolean"/>
+		</table>
+		
+		<table tableName="can_item" domainObjectName="ItemModel">
+			<generatedKey column="ID" sqlStatement="MySql" identity="true"/>
+			<columnOverride column="IS_COMMEND" javaType="Boolean"/>
+		</table>
+		
+		<table tableName="can_poll" domainObjectName="PollModel">
+			<generatedKey column="ID" sqlStatement="MySql" identity="true"/>
+			<columnOverride column="DISABLED" javaType="Boolean"/>
+		</table>
+		
+		<table tableName="can_votes" domainObjectName="VotesModel">
+			<generatedKey column="ID" sqlStatement="MySql" identity="true"/>
+		</table>
+		
+		<table tableName="can_poll_vote" domainObjectName="RelPollVoteModel">
+			<generatedKey column="ID" sqlStatement="MySql" identity="true"/>
+		</table>
+		
+		<table tableName="can_widget" domainObjectName="WidgetModel">
+			<generatedKey column="ID" sqlStatement="MySql" identity="true"/>
+			<columnOverride column="DISABLED" javaType="Boolean"/>
+		</table> -->
+
+	<!-- </context> -->
+<!-- </generatorConfiguration>   -->

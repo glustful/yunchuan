@@ -1,0 +1,1 @@
+create table test(id integer auto_increment primary key,name varchar(20));

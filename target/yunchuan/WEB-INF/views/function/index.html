@@ -1,0 +1,28 @@
+<html lang="zh-CN">
+	<head>
+		<title>这是一个简单的webapp项目</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="HandheldFriendly" content="true" />
+		<meta name="viewport" content="width=device-width;initial-scale=1.0;minimum-scale=1.0;maximum-scale=1.0;user-scalable=0;" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="format-detection" content="telephone=no"/>
+		<link href="resources/css/function.css" style="text/css" rel="stylesheet" />
+		
+	</head>
+	<body>
+		<div class="top">
+		</div>
+		<div class="content">
+		<p>
+		${content}
+		</p>
+		
+		</div>
+		<div class="bottom">
+			<a href="index?pageNo=${pageNo-1}"><input type="button" value="上一页"/></a>
+			<a href="index?pageNo=${pageNo+1}"><input type="button" value="下一页"/></a>
+		</div>
+	</body>
+</html>
+
