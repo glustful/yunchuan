@@ -26,16 +26,20 @@ public class IndexController extends BaseController{
 	}  
 	
 	@RequestMapping("/index")
-	public String index(ModelMap model,String pageNo,HttpServletRequest request,HttpServletResponse response) throws UnsupportedEncodingException {   
-		int page = 0;
+	public String index(ModelMap model,String pageNo,String offset,HttpServletRequest request,HttpServletResponse response) throws UnsupportedEncodingException {   
+		int page = 1;
+		long toffset = 0;
 		if(pageNo!=null){  
 			page = Integer.parseInt(pageNo);
 		}
-		System.out.println("pageno="+pageNo);
-		FileService service = new FileService(1025, page);
+		if(offset!=null){
+			toffset = Long.parseLong(offset);
+		}  
+		FileService service = new FileService(1025);
 		service.open("d:/txt/极品家丁.txt");
-		model.addAttribute("content", service.readFile(0));  
-		model.addAttribute("pageNo", page);
+		model.addAttribute("content", service.readFile(page,toffset));  
+		
+		model.addAttribute("offset", service.getOffset());
 		service.close();
 		return getViewPath("index");         
 	}   
