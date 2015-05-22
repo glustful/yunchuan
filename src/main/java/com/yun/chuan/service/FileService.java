@@ -35,11 +35,12 @@ public class FileService {
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+
 		}
-		
+
 	}
-	
-	public void close(){
+
+	public void close() {
 		try {
 			mRaf.close();
 		} catch (IOException e) {
@@ -47,6 +48,7 @@ public class FileService {
 			e.printStackTrace();
 		}
 	}
+
 	
 	public String readFile(int direction,long offset){
 		
@@ -66,10 +68,12 @@ public class FileService {
 			mOffset = offset+len;
 			return new String(data,0,len);
 		
+
 		} catch (IOException e) {
 			
 			e.printStackTrace();
 		}
+
 		
 		return "没有内容了！！！！！！！！！！！！！！";
 	}
@@ -83,5 +87,8 @@ public class FileService {
 		super();
 		
 		this.data = new char[length];
+
 	}
+
+
 }

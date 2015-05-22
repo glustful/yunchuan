@@ -8,8 +8,6 @@ import javax.servlet.http.HttpServletResponse;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
-
 import com.yun.chuan.service.FileService;
     
 @Controller
@@ -37,6 +35,7 @@ public class IndexController extends BaseController{
 		FileService service = new FileService(1024);
 		service.open("d:/txt/极品家丁.txt");
 		model.addAttribute("content", service.readFile(direct,mOffset));  
+
 		model.addAttribute("offset", service.getOffset());
 		service.close();
 		return getViewPath("index");            
