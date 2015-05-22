@@ -8,8 +8,21 @@
 .content{
 	width: 100%;
 	height: auto;
-	background:gray;
+	
+}
+.content p{
+	font-size: 22px;
 }
 .bottom{
-	
+	width: 100%;
+	height:auto;
+	text-align: center;
+}
+.bottom a{
+	width:40%;
+}
+.bottom a input{
+	width:40%;
+	height:50px;
+	font-size: 25px;
 }
